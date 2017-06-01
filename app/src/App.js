@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import RaisedButton from 'material-ui/RaisedButton';
 import './App.css';
-
+import Articles from './home/Articles'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +29,7 @@ class App extends Component {
         </div>
       );
     } else {
-      return (<p> home </p>);
+      return (<Articles />);
     }
   }
 }
