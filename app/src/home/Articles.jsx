@@ -12,16 +12,16 @@ export default class Articles extends React.Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 5,
+      slidesToShow: 1,
       swipeToSlide: true,
     };
     return (
       <div>
       <Slider {...settings}>
-
-        {["a","b","c"].map( (content, index) => (
-          <ArticlesItem content={content} key={index} />
-        ))}
+        {["a","b","c"].map( (content, index) => {
+          console.log(content)
+          return (<ArticlesItem content={content} key={index}/>);
+        })}
       </Slider>
       </div>);
   }
