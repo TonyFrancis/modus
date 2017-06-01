@@ -19,13 +19,11 @@ class App extends Component {
         <img src={logo} className="App-logo" alt="logo" />
         <h2 onClick={ () => this.setState({ landingPage : false })}>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-           <RaisedButton
-            primary
-            label="Start"
-            onTouchTap={ () => this.setState({ landingPage : false })}
-           />
-        </p>
+       <RaisedButton
+        primary
+        label="Start"
+        onTouchTap={ () => this.setState({ landingPage : false })}
+       />
         </div>
       );
     } else {

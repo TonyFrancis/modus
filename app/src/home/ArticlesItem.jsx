@@ -1,13 +1,11 @@
 import React from 'react';
 
 const ArticlesItem = ({content}) => (
-  <p>
-    {content}
-  </p>
+  <div><h3>{content}</h3></div>
 )
 
 ArticlesItem.propTypes = {
   content: React.PropTypes.string.isRequired,
 };
 
-export default ArticlesItem
+export default ArticlesItem;
