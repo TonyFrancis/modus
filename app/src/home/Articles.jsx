@@ -15,14 +15,10 @@ export default class Articles extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1
     };
-    var item = [<div><h3>1</h3></div>,<div><h3>2</h3></div>]
-    console.log(Array.isArray(item))
-    console.log(Array.isArray([1,2].map(content => <ArticlesItem content={content} />)))
-    var item =["A","B"].map(content => <div><h3>{content}</h3></div>)
     return (
       <div>
       <Slider {...settings}>
-            {item}
+            {["A","B"].map((content, index) =>ArticlesItem({content, index}))}
       </Slider>
       </div>);
   }
