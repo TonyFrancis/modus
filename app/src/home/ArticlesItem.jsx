@@ -1,5 +1,7 @@
 import React from 'react';
+// React.PropTypes deprecated on v15.5
 import PropTypes from 'prop-types';
+
 
 import {
   Card,
